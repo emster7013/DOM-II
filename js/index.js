@@ -36,7 +36,7 @@ window.addEventListener("load", function(event) {
 window.addEventListener('resize', (event) => {
     const textCont = document.querySelector('.text-content');
     textCont.textContent = 'My name is Emily!';
-    textCont.style.fontSize = '5rem';
+    textCont.style.fontSize = '4.5rem';
 });
 
 textCont.addEventListener('contextmenu', e => {
