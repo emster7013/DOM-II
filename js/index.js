@@ -2,7 +2,7 @@
 let navLink = document.querySelectorAll('.nav-link');
 let wholeBody = document.querySelector('body');
 let textCont = document.querySelectorAll('.text-content');
-const allButtons = document.querySelectorAll('.btn');
+const imgCont = document.querySelectorAll('.image-content');
 let conDest = document.querySelector('.content-destination');
 navLink.forEach(element => {
     element.addEventListener('mouseover', event => {
@@ -26,8 +26,8 @@ element.addEventListener('click', event => {
 });
 
 conDest.addEventListener('contextmenu', event => {
-        conDest.style.color = 'cyan';
-        conDest.style.backgroundColor='goldenrod';
+        conDest.style.color = 'magenta';
+        conDest.style.backgroundColor='cyan';
 });
 
 document.addEventListener('wheel', function(event){
@@ -51,6 +51,8 @@ window.addEventListener('resize', (event) => {
     textCont.style.fontSize = '5rem';
 });
 
-//allButtons.addEventListener('dblclick', function(event){
-    //allButtons.style.backgroundColor = "yellow";
-//});
+
+wholeBody.addEventListener('dblclick', function (event){
+    wholeBody.style.backgroundColor = "yellow";
+    
+});
