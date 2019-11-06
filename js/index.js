@@ -1,5 +1,6 @@
 // Your code goes here
 let navLink = document.querySelectorAll('.nav-link');
+let navs = document.querySelector('.nav')
 let wholeBody = document.querySelector('body');
 let textCont = document.querySelectorAll('.text-content');
 const imgCont = document.querySelectorAll('.image-content');
@@ -13,6 +14,9 @@ navLink.forEach(element => {
     })
     
 });
+navs.addEventListener('click', function(event){
+    event.preventDefault();
+})
 
 wholeBody.addEventListener('keydown', function(event){
     wholeBody.style.backgroundColor = '#C53151';
