@@ -5,6 +5,7 @@ let wholeBody = document.querySelector('body');
 let textCont = document.querySelectorAll('.text-content');
 const imgCont = document.querySelectorAll('.image-content');
 let conDest = document.querySelector('.content-destination');
+let btnz = document.querySelector('.btn');
 navLink.forEach(element => {
     element.addEventListener('mouseover', event => {
         element.style.color = 'blue';
@@ -12,11 +13,15 @@ navLink.forEach(element => {
     element.addEventListener('mouseleave', event=>{
         element.style.color = 'red';
     })
-    
+
 });
 navs.addEventListener('click', function(event){
     event.preventDefault();
 })
+btnz.addEventListener('click', (event) => {
+    event.target.style.backgroundColor = 'green';
+    event.stopPropagation();
+  })
 
 wholeBody.addEventListener('keydown', function(event){
     wholeBody.style.backgroundColor = '#C53151';
@@ -36,7 +41,7 @@ conDest.addEventListener('contextmenu', event => {
 
 document.addEventListener('wheel', function(event){
     alert('FOR THE LOVE OF ALL THINGS HOLY CLICK OK!');
-    event.stopPropagation();
+    
 });
 
 document.addEventListener('keydown', function(event){
